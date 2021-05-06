@@ -86,7 +86,7 @@ spec:
     spec:
       containers:
         - name: reloader-reloader
-          image: "stakater/reloader:v0.0.89"
+          image: "docker.io/stakater/reloader:v0.0.89"
           args:
             - "--namespaces-to-ignore=kube-system"
           imagePullPolicy: IfNotPresent
