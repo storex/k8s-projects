@@ -1,0 +1,17 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hackathon-starter-ingress-wo-host
+  namespace: hackathon-starter
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: hackathon-starter-svc
+                port:
+                  name: http
